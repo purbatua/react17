@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  min-height: 300px;
+  overflow: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+}
+
+.main {
+  margin: 15px;
+}
+
+.btn {
+  background-color: #000;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.task-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.task-list {
+  padding: 10px;
+}
+
+.task-list__item {
+  background-color: gainsboro;
+  padding: 7.5px 15px;
+  margin: 10px auto;
+  border-left: 5px solid transparent;
+  cursor: pointer;
+}
+
+.task-list__item--reminder {
+  background-color: gainsboro;
+  padding: 7.5px 15px;
+  margin: 10px auto;
+  border-left: 5px solid rgb(21, 228, 21);
+}
+
+
+.task-list__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list__item-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.add-form {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control__input {
+  padding: 5px 10px;
+  height: 40px;
+  margin: 5px;
+  font-size: 1.25rem;
+}
+
+.form-control-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.header .header__nav {
+  padding: 1.5rem;
+}
+
+.header .header__nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .header__nav ul li {
+  padding: 0.5rem;
+}
+
+.header .header__nav ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+.header .header__nav ul li a.active {
+  border-bottom: 2px solid #333333;
+  color: #333333;
+}
+
+.footer {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.footer p {
+  color: #c3c3c3;
+  font-size: 0.825rem;
+  text-align: center;
+}
